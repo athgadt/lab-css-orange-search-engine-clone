@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 36vw;
+}
+
+#orange {
+    font-family: 'Roboto';
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #F8765E;
+    text-decoration: none;
+}
+
+nav {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;   
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#phone {
+    width: 87%;
+    height: 35vh;
+    background-image: url('../images/orange-search-engine-phone.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;    
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    border: 1px solid black;
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+}
+
+form > input {
+    height: 90%;
+    border: none
+}
+
+#search {
+    background-image: url('../images/search-icon.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    main {
+        flex-direction: row-reverse;
+    }
+}
